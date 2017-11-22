@@ -89,6 +89,16 @@ app.get('/pagecount', function (req, res) {
   }
 });
 
+app.get('/notify', function (req, res) {
+    // res.send('notify get');
+    console.log('notify get');
+});
+
+app.get('/notify', function (req, res) {
+    // res.send('notify post');
+    console.log('notify post');
+});
+
 app.use('/content', express.static('views/content'));
 
 // error handling
